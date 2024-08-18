@@ -1,50 +1,57 @@
 
-# Simple Keylogger
+# 🖥️ Simple Keylogger
 
-This is a simple keylogger implemented in Python using the `pynput` library. It listens for keyboard events and logs the keystrokes to a file named `keylog.txt`.
+## 📖 Overview
 
-## Features
+This project is a simple Python keylogger that logs keyboard inputs to a file named `keylog.txt`. The program captures both alphanumeric and special keys, running continuously in the background until the `Esc` key is pressed.
 
-- Logs all alphanumeric keys and special keys (space, enter, shift, etc.)
-- Runs in a separate thread for continuous monitoring
-- Stops logging when the `Esc` key is pressed
+## 💡 Problem Statement
 
-## Prerequisites
+Create a Python program that logs all keyboard inputs, including special keys, to a text file. The keylogger should run in a separate thread and allow users to stop it by pressing the `Esc` key.
 
-- Python 3.x
-- `pynput` library (can be installed via pip)
+## ✨ Features
 
-## Installation
+- **📝 Logs Alphanumeric Keys**: Captures and logs all alphanumeric keys (letters and numbers).
+- **🔑 Special Key Mapping**: Recognizes and logs special keys such as space, enter, shift, ctrl, backspace, and escape.
+- **🔄 Continuous Monitoring**: The keylogger runs in a separate thread, continuously monitoring keystrokes.
+- **❌ Stop with 'Esc' Key**: Pressing the `Esc` key stops the keylogger.
 
-1. Clone the repository or download the `simple_keylogger.py` file.
-2. Install the `pynput` library if you haven't already:
+## 💻 Requirements
 
+- 🐍 Python 3.x
+- `pynput` library
+
+## ▶️ How to Run
+
+1. **📥 Clone this repository or download the `simple_keylogger.py` file**.
+
+2. **📦 Install the `pynput` library**:
     ```bash
     pip install pynput
     ```
 
-## Usage
-
-1. Run the keylogger script:
-
+3. **🏃 Run the Python script**:
     ```bash
     python simple_keylogger.py
     ```
 
-2. The keylogger will start, and keystrokes will be logged to `keylog.txt`.
+4. **🔍 Monitor the `keylog.txt` file**: Keystrokes will be logged here as they are captured.
 
-3. Press the `Esc` key to stop the keylogger.
+5. **❌ Stop the keylogger**: Press the `Esc` key to stop the program.
 
-## Key Mapping
-
-Special keys are logged as follows:
+## 🗺️ Key Mapping
 
 - Space: ` `
-- Enter: `\n`
+- Enter: `\\n`
 - Shift: `[Shift]`
 - Ctrl: `[Ctrl]`
 - Backspace: `[Backspace]`
 - Esc: `[Esc]`
 
 Other special keys will be logged with their names in square brackets (e.g., `[Tab]`).
+
+## 👤 Author
+
+- Yatharth Bhavsar
+
 
